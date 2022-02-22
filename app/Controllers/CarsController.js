@@ -57,7 +57,6 @@ export class CarsController {
   async deleteCar(carId) {
     try {
       if (await Pop.confirm()) {
-        debugger
         // NOTE just passes the ID of the car to be deleted
         await carsService.deleteCar(carId)
       }
